@@ -32,9 +32,12 @@ function getFixture() {
   const wrapper = document.createElement('div');
   wrapper.innerHTML = `
     <button class="mdc-switch" role="switch" aria-checked="false">
-      <div class="mdc-switch__track"></div>
+      <div class="mdc-switch__track">
+        <div class="mdc-switch__shadow"><div></div></div>
+      </div>
       <div class="mdc-switch__handle-track">
         <div class="mdc-switch__handle">
+          <div class="mdc-switch__shadow"><div></div></div>
           <div class="mdc-switch__ripple"></div>
           <div class="mdc-switch__handle">
             <div class="mdc-switch__icons">
