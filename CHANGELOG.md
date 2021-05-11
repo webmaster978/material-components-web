@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/material-components/material-components-web/compare/v11.0.0...v12.0.0) (2021-05-11)
+
+
+### Bug Fixes
+
+* **base:** observer now listens to superclass properties ([88a33cd](https://github.com/material-components/material-components-web/commit/88a33cd70c0e87fcfb9e2ff58967f911ad71ace7))
+* **button:** Fix non-text buttons with icons to have reduced horizontal padding on the side with the icon. ([197f64f](https://github.com/material-components/material-components-web/commit/197f64fa2a4b78907261e820c5e1e8724777c92c))
+* **chips:** Add documentation for action ([3db4d16](https://github.com/material-components/material-components-web/commit/3db4d1680bb4135c44042ac77521c8ff18032d14))
+* **chips:** Add documentation for chip; update action docs ([22b83ad](https://github.com/material-components/material-components-web/commit/22b83adadc55d1d2ccf150bc4a4dc28432f1f453))
+* **chips:** Add stubbed component methods along with tests ([06930c9](https://github.com/material-components/material-components-web/commit/06930c96b8a27ec886fc7873d7c0d0a4bec0761a))
+* **chips:** Document chip set; add root readme ([5b6a460](https://github.com/material-components/material-components-web/commit/5b6a460167986caea058dd3f42c11c1edd761596))
+* **chips:** Update chip set links ([4a7939c](https://github.com/material-components/material-components-web/commit/4a7939c9c3f3ec54bc486ee22567f9ca4e8f18bb))
+* **fab:** Fixed Fab ripple ([84f3db9](https://github.com/material-components/material-components-web/commit/84f3db9ed03fc414f347bfd88be384fe50646bd8)), closes [#7053](https://github.com/material-components/material-components-web/issues/7053)
+* **icon-button:** prevent icon shift on press in IE11 ([8fc2927](https://github.com/material-components/material-components-web/commit/8fc29273c49f5bf5006f4df715bee85fbace9cb8))
+* **list:** Add core-styles mixin. ([fc7c4e5](https://github.com/material-components/material-components-web/commit/fc7c4e5ce2451ecd76f7ea3860b18a16e5f31bac))
+* **list:** Ensure trailing-only variants have leading padding in RTL contexts. ([81e2d4f](https://github.com/material-components/material-components-web/commit/81e2d4ff36518c586972aad4512b43d2bb0cd2d2))
+* **list:** Fixed the selected + focused state of list item in HCM ([8ba3e29](https://github.com/material-components/material-components-web/commit/8ba3e298ca18cf8e7e11f07559e27287e74efeb8))
+* **list:** Selection lists without a selection focus first item. ([03f525f](https://github.com/material-components/material-components-web/commit/03f525f9ff880f27a43f2e50851a5dc6cd6b022c))
+* **rtl:** do not emit if a left/right value or replacement is null ([ec4ac52](https://github.com/material-components/material-components-web/commit/ec4ac5234c31df882a85a90af4d53b6797c8eb49))
+* **rtl:** mixins work with pseudo elements ([f5b6110](https://github.com/material-components/material-components-web/commit/f5b6110d6a3c5ef1253165f5575ed3980748e19c))
+* **switch:** export temporary deprecated version ([bd68539](https://github.com/material-components/material-components-web/commit/bd685395b652f448e889c123cda97efd77c85fcd))
+* **tabscroller:** remove trailing underscore ([105b15b](https://github.com/material-components/material-components-web/commit/105b15b965e41bfaafedfb43e278cd5cb9d22195))
+* **tooltip:** Fixing component definition of MDCTooltipAdatper#deregisterAnchorEventHandler. ([d928692](https://github.com/material-components/material-components-web/commit/d928692b52157c91c46c9addf66f93ebdff09145))
+
+
+### Code Refactoring
+
+* **iconbutton:** Move ripple target to inner element ([33c9a73](https://github.com/material-components/material-components-web/commit/33c9a737af75f30f434565e98ada51b335495f0a))
+
+
+### Features
+
+* **button:** Add focus indicator to link buttons in HCM. ([cad4896](https://github.com/material-components/material-components-web/commit/cad4896899cc89b1354ba5df95c3870efbb99af5))
+* **card:** Moving ripple into a `mdc-card__ripple` element rather than the `mdc-card__primary-action`. ([8ace3b8](https://github.com/material-components/material-components-web/commit/8ace3b8106499cc9c126abde77258bcae7d5929d))
+* **dialog:** removing call to `#close` within `#destroy`. ([5631828](https://github.com/material-components/material-components-web/commit/5631828e1541df22feb879a5310e57494ee722a3))
+* **switch:** add new component and foundation ([ef43e6d](https://github.com/material-components/material-components-web/commit/ef43e6d9607c7e8d6495b4a82e2178059dbe37fa))
+* **switch:** add updated density styles ([cb162da](https://github.com/material-components/material-components-web/commit/cb162da374f5e5d613e6a4554f0e1efcdc443c04))
+* **switch:** add updated RTL styles ([573dc7f](https://github.com/material-components/material-components-web/commit/573dc7ffd479527a885e95f4c8ece270363a31cc))
+* **switch:** update switch to new design spec ([0ce2fdb](https://github.com/material-components/material-components-web/commit/0ce2fdb02a62bb31f945144aac58957989ecfba6))
+* **theme:** add map-ext.split() helper function ([ec22e1d](https://github.com/material-components/material-components-web/commit/ec22e1da9746b38de654a18b0161c40c74e4e74f))
+* **theme:** add state selector mixins ([d20dc6d](https://github.com/material-components/material-components-web/commit/d20dc6dba8e8824645404d0eaafa763d8b026ef0))
+* **theme:** gss.annotate supports named arguments ([c50d20b](https://github.com/material-components/material-components-web/commit/c50d20bab49d5c00dd0a74e8616d02d8d87fba89))
+* **theme:** theme.property() supports custom prop declarations ([474836a](https://github.com/material-components/material-components-web/commit/474836ad0f4f92d03ce7dd0c9f923b6ff9abac7c))
+* **tooltip:** Adds logic for generating a new tooltip position when all "standard" positions for tooltip w/ caret are invalid. ([9bc0eff](https://github.com/material-components/material-components-web/commit/9bc0effaf60a530bed8247f2bb9190dcbbbdec54))
+* **tooltip:** Adds logic to determine valid position options for tooltip w/caret, and select which should be used. ([2ebfc53](https://github.com/material-components/material-components-web/commit/2ebfc537439508ea08bcd99991eed4fe838f3550))
+* **tooltip:** Adjusting logic and styles so the caret better matches spec. ([55ad2d7](https://github.com/material-components/material-components-web/commit/55ad2d7d8f9bcc979f5334352620815d6ea9add6))
+
+
+### BREAKING CHANGES
+
+* **iconbutton:** Icon button now requires an inner ripple element with
+class `mdc-icon-button__ripple`. See README for details.
+
+PiperOrigin-RevId: 372153409
+
+
+
+
+
 # [11.0.0](https://github.com/material-components/material-components-web/compare/v10.0.0...v11.0.0) (2021-04-15)
 
 
